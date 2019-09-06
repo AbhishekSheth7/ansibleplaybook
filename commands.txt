@@ -1,0 +1,40 @@
+77  ansible --version 
+   78  yum -y install git
+   79  gitclone https://github.com/AbhishekSheth7/ansibleplaybook.git
+   80  git clone https://github.com/AbhishekSheth7/ansibleplaybook.git
+   81  history
+   82  subscription-manager register
+   83  subscription-manager subscribe
+   84  subscription-manager status
+   85  ansible --version
+   86  touch ansible.cfg
+   87  ansible --version
+   88  ansible localhost -m ping
+   89  yum repolist all
+   90  ansible-light
+   91  ll
+   92  cd ansibleplaybook/
+   93  touch ansible.cfg
+   94  ansible localhost -m ping
+   95  ansible localhost -m copy -a "content='my book' dest=./motd"
+   96  ls
+   97  cat motd 
+   98  ansible localhost -m copy -a "content='my book' dest=./motd"
+   99  ansible localhost -m command -a echo 'ansible is awesome' > ./motd
+  100  ansible localhost -m command -a echo 'ansible is awesome' > ./motd"
+"
+  101  ansible localhost -m command "-a echo 'ansible is awesome' > ./motd"
+  102  ansible-doc lineinfile
+  103  ansible localhost -m lineinfile -a "path='./motd' line='Ansible is superawsome' create =yes"
+  104  ansible localhost -m lineinfile -a "path='./motd' line='Ansible is superawsome' create=yes"
+  105  cat ./motd 
+  106  ansible localhost -m lineinfile -a "path='./motd' line='Ansible is superawsome' create=yes"
+  107  ansible localhost -m lineinfile -a "path='./motd' line='Ansible is awsome' create=yes"
+  108  cat ./motd 
+  109  ansible-doc lineinfile
+  110  ansible localhost -m lineinfile -a "path='./motd' regexp='Ansible is awsome'line='Ansible is greatt'"
+  111  ansible localhost -m lineinfile -a "path='./motd' regexp='Ansible is awsome' line='Ansible is greatt'"
+  112  cat ./motd 
+  113  ansible localhost -m lineinfile -a "path='./motd' regexp='Ansible is greatt' line='Ansible is awsome'"
+  114  cat ./motd 
+
