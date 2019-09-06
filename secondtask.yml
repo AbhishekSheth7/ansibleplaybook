@@ -1,0 +1,12 @@
+---
+- name: Install httpd
+  hosts: localhost
+  tasks:
+  - name: httpd
+    yum:
+      name: httpd
+      state: present
+  - name: restart
+    service:
+      name: httpd
+      state: restarted
